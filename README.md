@@ -12,3 +12,5 @@ library(waccR)
 w_data <- wacc()
 
 ```
+
+For more on issues with calculating the WACC, see (for example) [here](https://www2.deloitte.com/content/dam/Deloitte/xe/Documents/About-Deloitte/mepovdocuments/mepov13/dtme_mepov13_Discount%20rates.pdf).
