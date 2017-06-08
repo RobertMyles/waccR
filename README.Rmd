@@ -1,0 +1,56 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# waccR
+
+`waccr` is an R package for the analysis of [Aswath Damodaran's](http://people.stern.nyu.edu/adamodar/New_Home_Page/home.htm) weighted cost of capital (WACC) [data](http://people.stern.nyu.edu/adamodar/New_Home_Page/datafile/wacc.htm). 
+
+## installation and usage: 
+
+```{r, eval = F}
+
+devtools::install_github("RobertMyles/waccR")
+
+library(waccR)
+
+w_data <- wacc()
+
+```
+
+## WACC 
+
+The Weighted Average Cost of Capital (WACC) represents the average cost of financing a
+company's debt and equity. There are two approches to calculating it, one based on the "Build-up" approach, the other on the Capital Assets Pricing Model (CAPM) approach. 
+
+$$WACC = K_e \times W_e + K_d \times W_d$$
+
+where $K_d$ is the after-tax cost of debt, $W_e$ and $W_d$ the proportion of equity and debt in a firm based on market value, and $K_e$ is the cost of equity, which, using the CAPM approach, is calculated with:   
+
+$$K_e = R_f + \beta(R_m) + R_s + CR + FR$$ 
+
+where $R_f$ is risk-free rate, $R_m$ is the market premium, $Rs$ is the company size premium,
+$CR$ the [country risk premium](https://github.com/RobertMyles/riscoBrasil), FR the firm-specific risk and $\beta$ is a measure of the systematic risk, usually of the industry sector, in comparison to the market as a whole.
+
+$\beta$ for various sectors of US industry is available with:  
+
+```{r, echo=FALSE}
+library(waccR)
+```
+```{r}
+betas()
+```
+
+For more, see Professor Damodaran's webpage: [http://people.stern.nyu.edu/adamodar/](http://people.stern.nyu.edu/adamodar/)
+
+

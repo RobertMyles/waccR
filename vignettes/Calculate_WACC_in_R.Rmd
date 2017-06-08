@@ -1,0 +1,15 @@
+---
+title: "Calculate WACC in R"
+author: "Robert Myles McDonnell"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Calculate WACC in R}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The Weighted Cost of Capital (WACC) is a ...
+
+
+`waccR` can make 
