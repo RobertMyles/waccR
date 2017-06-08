@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 
 # waccR
 
-`waccr` is an R package for the analysis of [Aswath Damodaran's](http://people.stern.nyu.edu/adamodar/New_Home_Page/home.htm) weighted cost of capital (WACC) [data](http://people.stern.nyu.edu/adamodar/New_Home_Page/datafile/wacc.htm). 
+`waccr` is an R package for the analysis of [Aswath Damodaran's](http://people.stern.nyu.edu/adamodar/New_Home_Page/home.htm) weighted cost of capital (WACC) [data](http://people.stern.nyu.edu/adamodar/New_Home_Page/datafile/wacc.htm). It simply downloads and tidies Professor Damodaran's data into R.   
 
 ## installation and usage: 
 
