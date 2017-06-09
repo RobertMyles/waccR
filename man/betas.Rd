@@ -22,5 +22,7 @@ Returns a data frame with the following variables:
 }
 }
 \examples{
+\dontrun{
 Beta <- betas()
+}
 }

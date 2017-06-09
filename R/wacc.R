@@ -62,7 +62,9 @@ wacc <- function(){
 #'  \item{\code{Total_Levered_Beta}}
 #' }
 #' @examples
+#' \dontrun{
 #' Beta <- betas()
+#' }
 #' @export
 betas <- function(){
 
