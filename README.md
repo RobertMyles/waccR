@@ -3,7 +3,7 @@
 waccR
 =====
 
-`waccr` is an R package for the analysis of [Aswath Damodaran's](http://people.stern.nyu.edu/adamodar/New_Home_Page/home.htm) weighted cost of capital (WACC) [data](http://people.stern.nyu.edu/adamodar/New_Home_Page/datafile/wacc.htm). It simply downloads and tidies Professor Damodaran's data into R.
+`waccr` is an R package for the analysis of [Aswath Damodaran's](http://people.stern.nyu.edu/adamodar/New_Home_Page/home.htm) weighted cost of capital (WACC) [data](http://people.stern.nyu.edu/adamodar/New_Home_Page/datafile/wacc.htm). It simply downloads Professor Damodaran's data set into R and tidies it.
 
 installation and usage:
 -----------------------
@@ -22,13 +22,13 @@ WACC
 
 The Weighted Average Cost of Capital (WACC) represents the average cost of financing a company's debt and equity. There are two approches to calculating it, one based on the "Build-up" approach, the other on the Capital Assets Pricing Model (CAPM) approach.
 
-*W**A**C**C* = *K*<sub>*e*</sub> × *W*<sub>*e*</sub> + *K*<sub>*d*</sub> × *W*<sub>*d*</sub>
+WACC = *C*<sub>*e*</sub> × *E* + *C*<sub>*d*</sub> × *D*
 
-where *K*<sub>*d*</sub> is the after-tax cost of debt, *W*<sub>*e*</sub> and *W*<sub>*d*</sub> the proportion of equity and debt in a firm based on market value, and *K*<sub>*e*</sub> is the cost of equity, which, using the CAPM approach, is calculated with:
+where *C*<sub>*d*</sub> is the after-tax cost of debt, E and D the proportion of equity and debt in a firm based on market value, and *C*<sub>*e*</sub> is the cost of equity, which, using the CAPM approach, is calculated with:
 
-*K*<sub>*e*</sub> = *R*<sub>*f*</sub> + *β*(*R*<sub>*m*</sub>)+*R*<sub>*s*</sub> + *C**R* + *F**R*
+*C*<sub>*e*</sub> = *R*<sub>*f*</sub> + *β*(*R*<sub>*m*</sub>)+*R*<sub>*s*</sub> + Risk + Firm Risk
 
-where *R*<sub>*f*</sub> is risk-free rate, *R*<sub>*m*</sub> is the market premium, *R**s* is the company size premium, *C**R* the [country risk premium](https://github.com/RobertMyles/riscoBrasil), FR the firm-specific risk and *β* is a measure of the systematic risk, usually of the industry sector, in comparison to the market as a whole.
+where *R*<sub>*f*</sub> is risk-free rate, *R*<sub>*m*</sub> is the market premium, *R*<sub>*s*</sub> is the company size premium, *Risk* the [country risk premium](https://github.com/RobertMyles/riscoBrasil), *Firm Risk* the firm-specific risk and *β* is a measure of the systematic risk, usually of the industry sector, in comparison to the market as a whole.
 
 *β* for various sectors of US industry is available with:
 

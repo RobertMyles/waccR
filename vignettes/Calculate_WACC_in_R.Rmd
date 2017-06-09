@@ -13,14 +13,13 @@ vignette: >
 The Weighted Average Cost of Capital (WACC) represents the average cost of financing a
 company's debt and equity. There are two approches to calculating it, one based on the "Build-up" approach, the other on the Capital Assets Pricing Model (CAPM) approach. 
 
-$$WACC = K_e \times W_e + K_d \times W_d$$
+$$\text{WACC} = C_e \times E + C_d \times D$$
 
-where $K_d$ is the after-tax cost of debt, $W_e$ and $W_d$ the proportion of equity and debt in a firm based on market value, and $K_e$ is the cost of equity, which, using the CAPM approach, is calculated with:   
+where $C_d$ is the after-tax cost of debt, E and D the proportion of equity and debt in a firm based on market value, and $C_e$ is the cost of equity, which, using the CAPM approach, is calculated with:   
 
-$$K_e = R_f + \beta(R_m) + R_s + CR + FR$$ 
+$$C_e = R_f + \beta(R_m) + R_s + \text{Risk} + \text{Firm Risk}$$ 
 
-where $R_f$ is risk-free rate, $R_m$ is the market premium, $Rs$ is the company size premium,
-$CR$ the [country risk premium](https://github.com/RobertMyles/riscoBrasil), FR the firm-specific risk and $\beta$ is a measure of the systematic risk, usually of the industry sector, in comparison to the market as a whole.  
+where $R_f$ is risk-free rate, $R_m$ is the market premium, $R_s$ is the company size premium, *Risk* the [country risk premium](https://github.com/RobertMyles/riscoBrasil), *Firm Risk* the firm-specific risk and $\beta$ is a measure of the systematic risk, usually of the industry sector, in comparison to the market as a whole.  
 
 According to [this](http://www.iese.edu/research/pdfs/DI-0914-E.pdf) paper, most companies do it wrong.  
 
