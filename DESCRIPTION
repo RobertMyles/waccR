@@ -1,5 +1,5 @@
 Package: waccR
-Title: Cost of Capital by Sector data
+Title: Cost of Capital by Sector Data
 Version: 0.1.0
 Authors@R: person("Robert Myles", "McDonnell", email = "robertmylesmcdonnell@gmail.com", role = c("aut", "cre"))
 Description: Downloads and tidies Aswath Damodaran's Cost of Capital Data. 
