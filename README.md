@@ -10,7 +10,7 @@ installation and usage:
 
 ``` r
 
-devtools::install_github("RobertMyles/waccR")
+remotes::install_github("RobertMyles/waccR")
 
 library(waccR)
 
